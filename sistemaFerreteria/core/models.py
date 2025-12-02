@@ -1,4 +1,22 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
+
+class Usuario(AbstractUser):
+    ROLES = (
+        ('administrador', 'Administrador'),
+        ('vendedor', 'Vendedor'),
+        ('caja', 'Caja'),
+        ('proveedor', 'Proveedor'),
+    )
+    rol = models.CharField(max_length=20, choices=ROLES, default='vendedor')
+    telefono = models.CharField(max_length=20, blank=True)
+    
+    class Meta:
+        verbose_name = "Usuario"
+        verbose_name_plural = "Usuarios"
+    
+    def __str__(self):
+        return f"{self.username} - {self.get_rol_display()}"
 
 class Cliente(models.Model):
     nombre = models.CharField(max_length=200)
@@ -7,13 +25,12 @@ class Cliente(models.Model):
     direccion = models.TextField(blank=True)
     fecha_registro = models.DateTimeField(auto_now_add=True)
     activo = models.BooleanField(default=True)
-
+    
     def __str__(self):
         return self.nombre
-
+    
     class Meta:
         verbose_name_plural = "Clientes"
-
 
 class Proveedor(models.Model):
     nombre = models.CharField(max_length=200)
@@ -23,9 +40,9 @@ class Proveedor(models.Model):
     direccion = models.TextField(blank=True)
     terminos_pago = models.CharField(max_length=100, blank=True)
     activo = models.BooleanField(default=True)
-
+    
     def __str__(self):
         return self.nombre
-
+    
     class Meta:
         verbose_name_plural = "Proveedores"

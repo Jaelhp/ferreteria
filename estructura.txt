@@ -1,0 +1,132 @@
+Listado de rutas de carpetas
+El n£mero de serie del volumen es ECA8-057C
+C:.
+³   estructura.txt
+³   
+ÀÄÄÄsistemaFerreteria
+    ³   db.sqlite3
+    ³   manage.py
+    ³   
+    ÃÄÄÄcompras
+    ³   ³   admin.py
+    ³   ³   apps.py
+    ³   ³   models.py
+    ³   ³   tests.py
+    ³   ³   views.py
+    ³   ³   __init__.py
+    ³   ³   
+    ³   ÃÄÄÄmigrations
+    ³   ³   ³   0001_initial.py
+    ³   ³   ³   __init__.py
+    ³   ³   ³   
+    ³   ³   ÀÄÄÄ__pycache__
+    ³   ³           0001_initial.cpython-313.pyc
+    ³   ³           __init__.cpython-313.pyc
+    ³   ³           
+    ³   ÀÄÄÄ__pycache__
+    ³           admin.cpython-313.pyc
+    ³           apps.cpython-313.pyc
+    ³           models.cpython-313.pyc
+    ³           __init__.cpython-313.pyc
+    ³           
+    ÃÄÄÄcore
+    ³   ³   admin.py
+    ³   ³   apps.py
+    ³   ³   models.py
+    ³   ³   tests.py
+    ³   ³   views.py
+    ³   ³   __init__.py
+    ³   ³   
+    ³   ÃÄÄÄmigrations
+    ³   ³   ³   0001_initial.py
+    ³   ³   ³   __init__.py
+    ³   ³   ³   
+    ³   ³   ÀÄÄÄ__pycache__
+    ³   ³           0001_initial.cpython-313.pyc
+    ³   ³           __init__.cpython-313.pyc
+    ³   ³           
+    ³   ÀÄÄÄ__pycache__
+    ³           admin.cpython-313.pyc
+    ³           apps.cpython-313.pyc
+    ³           models.cpython-313.pyc
+    ³           __init__.cpython-313.pyc
+    ³           
+    ÃÄÄÄinventario
+    ³   ³   admin.py
+    ³   ³   apps.py
+    ³   ³   models.py
+    ³   ³   tests.py
+    ³   ³   views.py
+    ³   ³   __init__.py
+    ³   ³   
+    ³   ÃÄÄÄmigrations
+    ³   ³   ³   0001_initial.py
+    ³   ³   ³   __init__.py
+    ³   ³   ³   
+    ³   ³   ÀÄÄÄ__pycache__
+    ³   ³           0001_initial.cpython-313.pyc
+    ³   ³           __init__.cpython-313.pyc
+    ³   ³           
+    ³   ÀÄÄÄ__pycache__
+    ³           admin.cpython-313.pyc
+    ³           apps.cpython-313.pyc
+    ³           models.cpython-313.pyc
+    ³           __init__.cpython-313.pyc
+    ³           
+    ÃÄÄÄproductos
+    ³   ³   admin.py
+    ³   ³   apps.py
+    ³   ³   models.py
+    ³   ³   tests.py
+    ³   ³   views.py
+    ³   ³   __init__.py
+    ³   ³   
+    ³   ÃÄÄÄmigrations
+    ³   ³   ³   0001_initial.py
+    ³   ³   ³   __init__.py
+    ³   ³   ³   
+    ³   ³   ÀÄÄÄ__pycache__
+    ³   ³           0001_initial.cpython-313.pyc
+    ³   ³           __init__.cpython-313.pyc
+    ³   ³           
+    ³   ÀÄÄÄ__pycache__
+    ³           admin.cpython-313.pyc
+    ³           apps.cpython-313.pyc
+    ³           models.cpython-313.pyc
+    ³           __init__.cpython-313.pyc
+    ³           
+    ÃÄÄÄsistemaFerreteria
+    ³   ³   asgi.py
+    ³   ³   settings.py
+    ³   ³   urls.py
+    ³   ³   wsgi.py
+    ³   ³   __init__.py
+    ³   ³   
+    ³   ÀÄÄÄ__pycache__
+    ³           settings.cpython-313.pyc
+    ³           urls.cpython-313.pyc
+    ³           wsgi.cpython-313.pyc
+    ³           __init__.cpython-313.pyc
+    ³           
+    ÀÄÄÄventas
+        ³   admin.py
+        ³   apps.py
+        ³   models.py
+        ³   tests.py
+        ³   views.py
+        ³   __init__.py
+        ³   
+        ÃÄÄÄmigrations
+        ³   ³   0001_initial.py
+        ³   ³   __init__.py
+        ³   ³   
+        ³   ÀÄÄÄ__pycache__
+        ³           0001_initial.cpython-313.pyc
+        ³           __init__.cpython-313.pyc
+        ³           
+        ÀÄÄÄ__pycache__
+                admin.cpython-313.pyc
+                apps.cpython-313.pyc
+                models.cpython-313.pyc
+                __init__.cpython-313.pyc
+                

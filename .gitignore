@@ -1,0 +1,46 @@
+# Entorno virtual
+venv/
+env/
+ENV/
+
+# Archivos de Python
+*.pyc
+*.pyo
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Base de datos SQLite
+*.sqlite3
+db.sqlite3
+
+# Archivos de configuración local
+*.env
+.env
+local_settings.py
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de migración
+# */migrations/*.py
+# !*/migrations/__init__.py
+
+# Archivos estáticos recolectados
+staticfiles/
+media/
+
+# Logs
+*.log
+
+# Coverage
+htmlcov/
+.coverage

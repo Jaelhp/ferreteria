@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Detalle de venta</title></head>
+<body>
+  <h1>Detalle de venta - {{ venta.numero_venta }}</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar detalle</button>
+  </form>
+  <p><a href="{% url 'ventas:venta_detail' venta.pk %}">Volver</a></p>
+</body>
+</html>

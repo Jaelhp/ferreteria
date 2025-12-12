@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Eliminar detalle de venta</title></head>
+<body>
+  <h1>Eliminar detalle</h1>
+  <p>¿Seguro que deseas eliminar este detalle de venta?</p>
+  <p><strong>Producto:</strong> {{ detalle.producto.nombre }} | <strong>Cantidad:</strong> {{ detalle.cantidad }}</p>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit">Sí, eliminar</button>
+  </form>
+  <p><a href="{% url 'ventas:venta_detail' venta.pk %}">Cancelar</a></p>
+</body>
+</html>

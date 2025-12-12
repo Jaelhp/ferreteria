@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Detalle de compra</title></head>
+<body>
+  <h1>Detalle de compra - {{ compra.numero_compra }}</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar detalle</button>
+  </form>
+  <p><a href="{% url 'compras:compra_detail' compra.pk %}">Volver</a></p>
+</body>
+</html>

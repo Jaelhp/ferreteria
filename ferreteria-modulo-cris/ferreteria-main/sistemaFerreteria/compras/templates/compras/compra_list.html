@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Compras</title></head>
+<body>
+  <h1>Listado de Compras</h1>
+  <p><a href="{% url 'compras:compra_create' %}">Nueva compra</a></p>
+  <table border="1">
+    <tr>
+      <th>Número</th>
+      <th>Proveedor</th>
+      <th>Fecha</th>
+      <th>Total</th>
+      <th>Acciones</th>
+    </tr>
+    {% for compra in compras %}
+    <tr>
+      <td>{{ compra.numero_compra }}</td>
+      <td>{{ compra.proveedor.nombre }}</td>
+      <td>{{ compra.fecha }}</td>
+      <td>{{ compra.total }}</td>
+      <td>
+        <a href="{% url 'compras:compra_detail' compra.pk %}">Ver</a> |
+        <a href="{% url 'compras:compra_update' compra.pk %}">Editar</a> |
+        <a href="{% url 'compras:compra_delete' compra.pk %}">Eliminar</a>
+      </td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="5">No hay compras registradas.</td></tr>
+    {% endfor %}
+  </table>
+</body>
+</html>

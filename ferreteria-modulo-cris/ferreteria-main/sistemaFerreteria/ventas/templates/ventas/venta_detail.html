@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Detalle de venta</title></head>
+<body>
+  <h1>Venta {{ venta.numero_venta }}</h1>
+  <p><strong>Cliente:</strong> {{ venta.cliente.nombre }}</p>
+  <p><strong>Fecha:</strong> {{ venta.fecha }}</p>
+  <p><strong>Total:</strong> {{ venta.total }}</p>
+  <p><strong>Notas:</strong> {{ venta.notas }}</p>
+
+  <h2>Detalles</h2>
+  <p><a href="{% url 'ventas:detalle_venta_create' venta.pk %}">Agregar producto</a></p>
+  <table border="1">
+    <tr>
+      <th>Producto</th>
+      <th>Cantidad</th>
+      <th>Precio unitario</th>
+      <th>Subtotal</th>
+      <th>Acciones</th>
+    </tr>
+    {% for det in detalles %}
+    <tr>
+      <td>{{ det.producto.nombre }}</td>
+      <td>{{ det.cantidad }}</td>
+      <td>{{ det.precio_unitario }}</td>
+      <td>{{ det.subtotal }}</td>
+      <td>
+        <a href="{% url 'ventas:detalle_venta_update' det.pk %}">Editar</a> |
+        <a href="{% url 'ventas:detalle_venta_delete' det.pk %}">Eliminar</a>
+      </td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="5">No hay detalles registrados.</td></tr>
+    {% endfor %}
+  </table>
+
+  <p><a href="{% url 'ventas:venta_list' %}">Volver al listado</a></p>
+</body>
+</html>

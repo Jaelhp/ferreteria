@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>{% if compra %}Editar compra{% else %}Nueva compra{% endif %}</title></head>
+<body>
+  <h1>{% if compra %}Editar compra{% else %}Nueva compra{% endif %}</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar</button>
+  </form>
+  <p><a href="{% url 'compras:compra_list' %}">Volver</a></p>
+</body>
+</html>

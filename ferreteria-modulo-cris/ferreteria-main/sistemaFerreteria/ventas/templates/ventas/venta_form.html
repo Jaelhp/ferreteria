@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>{% if venta %}Editar venta{% else %}Nueva venta{% endif %}</title></head>
+<body>
+  <h1>{% if venta %}Editar venta{% else %}Nueva venta{% endif %}</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar</button>
+  </form>
+  <p><a href="{% url 'ventas:venta_list' %}">Volver</a></p>
+</body>
+</html>

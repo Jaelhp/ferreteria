@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Eliminar venta</title></head>
+<body>
+  <h1>Eliminar venta {{ venta.numero_venta }}</h1>
+  <p>¿Estás seguro de eliminar esta venta? También se revertirán los movimientos de inventario asociados.</p>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit">Sí, eliminar</button>
+  </form>
+  <p><a href="{% url 'ventas:venta_detail' venta.pk %}">Cancelar</a></p>
+</body>
+</html>
